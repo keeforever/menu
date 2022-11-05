@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
 
-const MenuItem = ({img,title,price,desc}) => {
+const MenuItem = ({ img, title, price, desc }) => {
   return (
-    <article className='menu-item-container'>
-
+    <article className="menu-item-container">
       <div className="img-container">
-        <img src={img} alt=":(" />
+        <img src={img} alt=":(" loading="lazy" />
       </div>
 
       <div className="food_info-container">
@@ -13,10 +12,10 @@ const MenuItem = ({img,title,price,desc}) => {
           <h3>{title}</h3>
           <span>{`$${price}`}</span>
         </header>
-        <p className='desc'>{desc}</p>
+        <p className="desc">{desc}</p>
       </div>
     </article>
-  )
-}
+  );
+};
 
 export default MenuItem;
